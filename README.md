@@ -1,4 +1,4 @@
-# turing
+# CurlyHTML
 Pure JavaScript HTML generator. You write JavaScript, we return HTML. No templates.
 
 This:
@@ -8,8 +8,8 @@ div(
   label({"for": "rendering-method-dropdown"}, "How do you want to render your UI?"),
   select(
     {id: "rendering-method-dropdown"},
-    option({value: "react"}, "React"),
-    option({value: "turing"}, "Turing"),
+    option({value: "angular"}, "AngularJS"),
+    option({value: "curly"}, "CurlyHTML"),
   )
 )
 ```
@@ -20,8 +20,8 @@ Returns this:
 <div>
   <label for="rendering-method-dropdown">"How do you want to render your UI?"</label>
   <select id="rendering-method-dropdown">
-    <option value="react">React</option>
-    <option value="turing">Turing</option>
+    <option value="angular">AngularJS</option>
+    <option value="curly">CurlyHTML</option>
   </select>
 </div>
 ```
@@ -39,8 +39,8 @@ container.innerHTML = div(
   label({"for": "rendering-method-dropdown"}, "How do you want to render your UI?"),
   select(
     {id: "rendering-method-dropdown"},
-    option({value: "react"}, "React"),
-    option({value: "turing"}, "Turing"),
+    option({value: "angular"}, "AngularJS"),
+    option({value: "curly"}, "CurlyHTML"),
   )
 );
 ```
@@ -49,8 +49,10 @@ As of this writing, the implementation is 23 lines of unobfuscated,
 uncompressed, readable JavaScript -- see for yourself. The implementation is
 less than half the length of the README.
 
-You can do anything in Turing that you can do in JavaScript because it is
+You can do anything in CurlyHTML that you can do in JavaScript because it is
 JavaScript -- pure JavaScript.
 
 It supports everything that HTML supports because HTML is just tags and attributes.
-And you tell Turing what tags you need.
+And you tell CurlyHTML what tags you need.
+
+(Why "CurlyHTML"? Because it's the opposite of AngularJS.)
